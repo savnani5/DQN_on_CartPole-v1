@@ -1,6 +1,0 @@
-Traceback (most recent call last):
-  File "agent.py", line 114, in <module>
-    rb = ReplayBuffer()
-  File "agent.py", line 63, in __init__
-    self.buffer = deque(max_len=buffer_size)
-TypeError: 'max_len' is an invalid keyword argument for deque()
