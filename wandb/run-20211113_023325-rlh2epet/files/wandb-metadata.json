@@ -1,0 +1,18 @@
+{
+    "os": "Windows-10-10.0.19041-SP0",
+    "python": "3.8.6",
+    "heartbeatAt": "2021-11-13T07:33:29.412278",
+    "startedAt": "2021-11-13T07:33:25.639050",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 2060",
+    "gpu_count": 1,
+    "cpu_count": 16,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "agent.py",
+    "codePath": "agent.py",
+    "host": "Jarvis",
+    "username": "savna",
+    "executable": "F:\\Coding Practice\\Python\\env\\Scripts\\python.exe"
+}

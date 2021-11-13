@@ -1,0 +1,180 @@
+
+
+
+
+
+26410it [00:19, 1056.42it/s]
+
+
+
+
+
+
+
+
+40201it [00:35, 799.66it/s]
+
+
+
+
+
+
+
+
+
+55149it [00:54, 760.71it/s]
+
+
+
+
+
+
+
+
+
+69491it [01:11, 835.13it/s]
+
+
+
+
+
+
+
+
+
+84742it [01:30, 847.41it/s]
+
+
+
+
+
+
+
+
+
+
+100700it [01:50, 849.78it/s]
+
+
+
+
+
+109184it [02:01, 823.82it/s]F:\Coding Practice\Python\env\lib\site-packages\numpy\core\fromnumeric.py:3334: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+F:\Coding Practice\Python\env\lib\site-packages\numpy\core\_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+
+
+
+115345it [02:08, 838.97it/s]
+
+
+
+
+
+
+
+
+
+
+131505it [02:28, 844.17it/s]
+
+
+
+
+
+
+
+
+
+145645it [02:46, 824.63it/s]
+
+
+
+
+
+
+
+
+
+
+161906it [03:06, 840.91it/s]
+
+
+
+
+
+
+
+
+
+176450it [03:24, 836.38it/s]
+
+
+
+
+
+
+
+
+
+
+193014it [03:45, 814.33it/s]
+
+
+
+
+
+
+
+
+
+206851it [04:02, 797.59it/s]
+
+
+
+
+
+
+
+
+
+
+223011it [04:23, 822.48it/s]
+
+
+
+
+
+
+
+
+
+237454it [04:41, 806.55it/s]
+
+
+
+
+
+
+
+
+
+
+252705it [05:00, 795.62it/s]
+
+
+
+
+
+
+
+
+
+
+269471it [05:21, 836.77it/s]
+
+
+
+
+275025it [05:28, 837.73it/s]
