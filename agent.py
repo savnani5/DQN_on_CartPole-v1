@@ -60,13 +60,20 @@ class ReplayBuffer:
     
     def __init__(self, buffer_size = 100000):
         self.buffer_size = buffer_size
-        self.buffer = deque(maxlen=buffer_size)
+        # self.buffer = deque(maxlen=buffer_size)
+        self.buffer = [None]*buffer_size
+        self.idx = 0
     
     def insert(self, sarsd):
-        self.buffer.append(sarsd)
+        self.buffer[self.idx % self.buffer_size] = sarsd
+        self.idx += 1
+        # self.buffer.append(sarsd)
 
     def sample(self, num_samples):
-        assert num_samples <= len(self.buffer)
+        # assert num_samples <= len(self.buffer)
+        assert num_samples < min(self.idx, self.buffer_size)
+        if self.idx < self.buffer_size:
+            return sample(self.buffer[:self.idx], num_samples)
         return sample(self.buffer, num_samples)
 
 
@@ -100,14 +107,15 @@ def main(test=False, chkpt=None, device="cuda"):
     
     if not test:
         wandb.init(project="dqn", name="cartpole")
-    min_rb_size = 10000
-    sample_size = 2500
+    memory_size = 500000
+    min_rb_size = 20000
+    sample_size = 7500
     eps_min = 0.01
     eps_decay = 0.999995
 
 
-    env_steps_before_train = 100
-    tgt_model_update = 150
+    env_steps_before_train = 1000
+    tgt_model_update = 100
 
     env = gym.make("CartPole-v1")
     last_observation = env.reset()
@@ -191,5 +199,5 @@ def main(test=False, chkpt=None, device="cuda"):
         
 
 if __name__ == "__main__":
-    # main(True, "models/259167.pth")
+    # main(True, "models/487932.pth")
     main()
